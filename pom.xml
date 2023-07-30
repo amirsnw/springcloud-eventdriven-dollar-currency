@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.0</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.snw</groupId>
+    <artifactId>springcloud-eventdriven-dollar-currency</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>springcloud-eventdriven-dollar-currency</name>
+    <description>spring cloud event-driven dollar currency using kafka/websocket</description>
+
+    <properties>
+        <java.version>17</java.version>
+        <spring-cloud.version>2022.0.3</spring-cloud.version>
+        <jib-maven-plugin.version>3.3.2</jib-maven-plugin.version>
+        <jdk-image.version>17.0.7</jdk-image.version>
+    </properties>
+
+    <modules>
+        <module>bitcoin-api</module>
+        <module>bitcoin-client</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
