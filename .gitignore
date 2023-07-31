@@ -1,2 +1,39 @@
-target/*
-.idea/*
+# Maven target directories
+target/
+
+# IDE-specific files
+*.iml
+*.iws
+*.ipr
+.idea/
+.vscode/
+
+# Compiled class file
+*.class
+
+# Log files
+log/
+logs/
+
+# Spring Boot generated files
+spring-boot-*.jar
+/mvnw
+/mvnw.cmd
+
+# Gradle generated files
+gradle/
+.gradle/
+build/
+
+# Eclipse generated files
+.classpath
+.project
+.settings/
+.springBeans
+
+# Intellij generated files
+*.iml
+*.ipr
+*.iws
+.idea/
+out/

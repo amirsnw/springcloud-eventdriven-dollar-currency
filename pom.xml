@@ -24,8 +24,8 @@
     </properties>
 
     <modules>
-        <module>bitcoin-api</module>
-        <module>bitcoin-client</module>
+        <module>currency-api</module>
+        <module>currency-client</module>
     </modules>
 
     <dependencyManagement>
